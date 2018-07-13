@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_245925_dxc_docs.dxc_exchange_rates_user" name="x_245925_dxc_docs.dxc_exchange_rates_user">3246378ddb1b53005b1f9b81ca9619af</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-13 08:19:03</sys_created_on>
+        <sys_id>be46378ddb1b53005b1f9b81ca9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3246378ddb1b53005b1f9b81ca9619af</sys_name>
+        <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
+        <sys_update_name>sys_embedded_help_role_be46378ddb1b53005b1f9b81ca9619b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-13 08:19:03</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Local Business Units" max_length="40" name="x_245925_dxc_docs_local_business_units" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Country" mandatory="true" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element label="Default Currency" mandatory="true" max_length="32" name="default_currency" reference="fx_currency" type="reference"/>
+        <element display="true" label="Name" mandatory="true" max_length="300" name="name" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="default_currency"/>
+        </index>
+    </element>
+</database>

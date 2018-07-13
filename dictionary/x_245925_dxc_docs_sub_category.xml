@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Sub Category" max_length="40" name="x_245925_dxc_docs_sub_category" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" mandatory="true" max_length="300" name="description" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+    </element>
+</database>

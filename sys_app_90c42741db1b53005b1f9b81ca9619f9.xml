@@ -2,13 +2,13 @@
 <record_update table="sys_app">
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
-        <enforce_license>none</enforce_license>
+        <enforce_license>log</enforce_license>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
         <license_model>none</license_model>
         <logo/>
         <menu/>
-        <name>DXC Docs Approval</name>
+        <name>DXC Approval Note</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -23,9 +23,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-13 07:02:26</sys_created_on>
         <sys_id>90c42741db1b53005b1f9b81ca9619f9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 07:02:26</sys_updated_on>
+        <sys_updated_on>2018-07-13 07:31:20</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
