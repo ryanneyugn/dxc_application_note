@@ -33,7 +33,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-07-13 07:40:46</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_245925_dxc_docs.DXC Admin" name="x_245925_dxc_docs.DXC Admin">bbbbab09db1b53005b1f9b81ca9619a5</user_role>
+        <user_role/>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>

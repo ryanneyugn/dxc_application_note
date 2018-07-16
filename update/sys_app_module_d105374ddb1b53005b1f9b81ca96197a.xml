@@ -19,14 +19,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_245925_dxc_docs.DXC Leader,x_245925_dxc_docs.DXC PM,x_245925_dxc_docs.DXC Admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-13 08:13:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d105374ddb1b53005b1f9b81ca96197a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>DXC Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_app_module_d105374ddb1b53005b1f9b81ca96197a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 08:13:43</sys_updated_on>
+        <sys_updated_on>2018-07-16 03:19:01</sys_updated_on>
         <timeline_page/>
         <title>DXC Dashboard</title>
         <uncancelable>false</uncancelable>
