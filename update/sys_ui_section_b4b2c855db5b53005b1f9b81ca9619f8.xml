@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Comments" section_id="b4b2c855db5b53005b1f9b81ca9619f8" sys_domain="global" table="x_245925_dxc_docs_approval_request" version="3" view="dxcapprovalview">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-13 09:13:24</sys_created_on>
+            <sys_id>7eb24c55db5b53005b1f9b81ca96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Comments" display_value="Comments" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">b4b2c855db5b53005b1f9b81ca9619f8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-13 09:13:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Comments</caption>
+            <header>false</header>
+            <name>x_245925_dxc_docs_approval_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-13 09:13:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4b2c855db5b53005b1f9b81ca9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Comments</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
+            <sys_update_name>sys_ui_section_b4b2c855db5b53005b1f9b81ca9619f8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-13 09:13:16</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="DXCApprovalView" name="dxcapprovalview">b6720c95db5b53005b1f9b81ca9619a4</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
