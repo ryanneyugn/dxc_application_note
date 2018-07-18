@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_245925_dxc_docs.FreeCurrencyConverter</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>FreeCurrencyConverter</name>
+        <script><![CDATA[var FreeCurrencyConverter = Class.create();
+FreeCurrencyConverter.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {	
+	getRate : function(){
+		// Invoke REST Message to get currency rate from web service API
+		var cur_pair = this.getParameter('sysparm_local_currency') + '_GBP';
+		try {
+			var r = new sn_ws.RESTMessageV2('x_245925_dxc_docs.Free Currency Converter', 'Default GET');
+			r.setStringParameterNoEscape('currency_pair', cur_pair);
+			
+			//override authentication profile
+			//authentication type ='basic'/ 'oauth2'
+			//r.setAuthentication(authentication type, profile name);
+			
+			//set a MID server name if one wants to run the message on MID
+			//r.setMIDServer('MY_MID_SERVER');
+			
+			//if the message is configured to communicate through ECC queue, either
+			//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+			//to true. Otherwise, one may get an intermittent error that the response body is null
+			//r.setEccParameter('skip_sensor', true);
+			
+			var response = r.executeAsync();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+			
+			var obj = JSON.parse(responseBody);
+			return obj[cur_pair]['val'];
+		}
+		catch(ex) {
+			var message = ex.toString();
+			gs.addErrorMessage(message);
+		}
+	},
+	
+	type: 'FreeCurrencyConverter'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-18 08:19:40</sys_created_on>
+        <sys_id>4f35edf2dbd313005b1f9b81ca961967</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>FreeCurrencyConverter</sys_name>
+        <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
+        <sys_update_name>sys_script_include_4f35edf2dbd313005b1f9b81ca961967</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-18 09:10:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

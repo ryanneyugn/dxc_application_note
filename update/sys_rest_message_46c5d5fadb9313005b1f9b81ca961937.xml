@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>API v6</description>
+        <name>Free Currency Converter</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://free.currencyconverterapi.com</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-18 07:14:10</sys_created_on>
+        <sys_id>46c5d5fadb9313005b1f9b81ca961937</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Free Currency Converter</sys_name>
+        <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
+        <sys_update_name>sys_rest_message_46c5d5fadb9313005b1f9b81ca961937</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-18 07:26:31</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

@@ -7,21 +7,19 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>false</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_245925_dxc_docs_approval_request</collection>
-        <condition/>
+        <condition>current.isNewRecord()</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_245925_dxc_docs_approval_request">lbuISEMPTY^EQ<item endquery="false" field="lbu" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>DXC_RequestApproval_GetUserLBU</name>
+        <name>DXC_CreateNewRequest_FormAutoPopulate</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,36 +28,44 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {		 	
-	// Get current user's "Country" info (string)
-	var userCountry = current.submitted_by.location.country;
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	var lbu = new GlideRecord('x_245925_dxc_docs_local_business_units');
-	// Find a record in LBU table that satisfy the equation 
-	// (user's Country = LBU.country.name)
+	var userCountry=current.submitted_by.location.country;
+	var lbu=new GlideRecord('x_245925_dxc_docs_local_business_units');
+	var fx_rate = new GlideRecord('fx_rate');
+	
+	// LBU field initialization
 	lbu.get('country.name', userCountry);
+	current.lbu = lbu.sys_id;
 	
-	g_scratchpad.location = lbu.sys_id;
+	// Local currency field initialization
+	current.local_currency = current.lbu.default_currency;
+	
+	// Exchange rate field initialization
+	fx_rate.orderByDesc('created');
+	fx_rate.addQuery('currency', current.local_currency);
+	fx_rate.query();
+	fx_rate.next();
+	current.exchange_rate = fx_rate.rate;	
 		
-
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-07-16 07:59:03</sys_created_on>
+        <sys_created_on>2018-07-18 02:06:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ef504b8edb1b13005b1f9b81ca96197a</sys_id>
-        <sys_mod_count>32</sys_mod_count>
-        <sys_name>DXC_RequestApproval_GetUserLBU</sys_name>
+        <sys_id>cfff4cb6db1313005b1f9b81ca961945</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>DXC_CreateNewRequest_FormAutoPopulate</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
-        <sys_update_name>sys_script_ef504b8edb1b13005b1f9b81ca96197a</sys_update_name>
+        <sys_update_name>sys_script_cfff4cb6db1313005b1f9b81ca961945</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-17 07:46:55</sys_updated_on>
+        <sys_updated_on>2018-07-18 08:16:25</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=ef504b8edb1b13005b1f9b81ca96197a"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfff4cb6db1313005b1f9b81ca961945"/>
 </record_update>
