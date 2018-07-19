@@ -7,7 +7,7 @@
         <element label="DXC Title" mandatory="true" max_length="300" name="dxc_title" type="string"/>
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
         <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
-        <element attributes="scale=10" label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
+        <element attributes="scale=20" label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
         <element label="LBU" mandatory="true" max_length="32" name="lbu" read_only="true" reference="x_245925_dxc_docs_local_business_units" type="reference"/>
         <element label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
         <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
@@ -20,7 +20,7 @@
         <element label="Next approver" mandatory="true" max_length="100" name="next_approver" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Please specify" mandatory="true" max_length="100" name="please_specify" type="string"/>
-        <element label="Reviewing" max_length="40" name="reviewing" type="boolean"/>
+        <element label="Reviewing" max_length="40" name="reviewing" read_only="true" type="boolean"/>
         <element choice="3" default="New" label="State" mandatory="true" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Approved" value="Approved"/>

@@ -24,7 +24,7 @@
         <onclick>onClickSubmit()</onclick>
         <order>100</order>
         <script><![CDATA[function onClickSubmit(){
-	if(g_form.getValue('state') == 'Draft'){
+	if(g_form.getValue('state') == 'Draft' || g_form.getValue('state') == 'New'){
 		if(g_form.getValue('level_of_approval') == 'Leader'){
 			g_form.setValue('state', 'WaitingLeader');
 		}else if(g_form.getValue('level_of_approval') == 'LeaderPM'){
@@ -65,7 +65,7 @@ function run(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>51474099db5b53005b1f9b81ca9619a1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -73,7 +73,7 @@ function run(){
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_action_51474099db5b53005b1f9b81ca9619a1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-15 12:49:30</sys_updated_on>
+        <sys_updated_on>2018-07-19 03:22:10</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
