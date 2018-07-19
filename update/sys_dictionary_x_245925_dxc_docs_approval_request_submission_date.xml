@@ -18,7 +18,7 @@
         <column_label>Submission Date</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript:gs.nowDateTime()</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -26,7 +26,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="Now (Date and Time)">79cb83a85f220100a9ad2572f2b4773c</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>submission_date</element>
         <element_reference>false</element_reference>
@@ -55,19 +55,19 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-13 07:57:22</sys_created_on>
         <sys_id>12f03f89db1b53005b1f9b81ca961972</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Submission Date</sys_name>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_dictionary_x_245925_dxc_docs_approval_request_submission_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 07:57:22</sys_updated_on>
+        <sys_updated_on>2018-07-19 04:17:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
