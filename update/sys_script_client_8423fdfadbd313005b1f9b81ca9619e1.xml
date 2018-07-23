@@ -11,20 +11,18 @@
         <name>DXC_CreateNewRequest_OnLoad_GBP</name>
         <order/>
         <script><![CDATA[function onLoad() {
-   var local_currency = g_form.getReference('local_currency', getGBP);
 	
-	function getGBP(local_currency){
-		var ga = new GlideAjax('FreeCurrencyConverter');
-		ga.addParam('sysparm_name', 'getRate');
-		ga.addParam('sysparm_local_currency', local_currency.code);
-		ga.getXML(responseHandler);
+	var ga = new GlideAjax('FreeCurrencyConverter');
+	ga.addParam('sysparm_name', 'getRate');
+	ga.addParam('sysparm_local_currency', g_form.getDisplayBox('local_currency').value);
+	ga.getXML(responseHandler);
+	
+	function responseHandler(response){
+		var rate = response.responseXML.documentElement.getAttribute("answer");
+		g_form.setValue('gbp', rate);
 		
-		function responseHandler(response){
-			var rate = response.responseXML.documentElement.getAttribute("answer");
-			g_form.setValue('gbp', rate);
-		}
 	}
-   
+	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -32,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8423fdfadbd313005b1f9b81ca9619e1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>DXC_CreateNewRequest_OnLoad_GBP</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -40,7 +38,7 @@
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_script_client_8423fdfadbd313005b1f9b81ca9619e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 09:17:08</sys_updated_on>
+        <sys_updated_on>2018-07-20 08:39:09</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

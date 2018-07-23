@@ -12,20 +12,20 @@
         <oauth2_profile/>
         <protocol_name/>
         <qualified_name>Free Currency Converter [ Default GET ]</qualified_name>
-        <rest_endpoint>https://free.currencyconverterapi.com/api/v6/convert?q=${currency_pair}&amp;&amp;compact=y</rest_endpoint>
+        <rest_endpoint>https://free.currencyconverterapi.com/api/v6/convert?q=${currency_pair}&amp;compact=y</rest_endpoint>
         <rest_message display_value="Free Currency Converter">46c5d5fadb9313005b1f9b81ca961937</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-18 07:14:10</sys_created_on>
         <sys_id>8d67953edb9313005b1f9b81ca961940</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Default GET</sys_name>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_rest_message_fn_8d67953edb9313005b1f9b81ca961940</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-18 07:33:18</sys_updated_on>
+        <sys_updated_on>2018-07-20 08:41:50</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>
