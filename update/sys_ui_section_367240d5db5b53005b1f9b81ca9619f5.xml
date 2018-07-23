@@ -5,13 +5,13 @@
             <element>dxc_title</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>e3a2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>ebd02fdcdbe313005b1f9b81ca961927</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>67a2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>a3d02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>e7a2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>27d02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>6ba2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>a7d02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>lbu</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>eba2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>2bd02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,153 +75,111 @@
             <element>sub_category</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>6fa2c0d5db5b53005b1f9b81ca9619aa</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>abd02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>level_of_approval</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>efa2c0d5db5b53005b1f9b81ca9619aa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>leader_agree</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>63a2c0d5db5b53005b1f9b81ca9619ab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>8</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>e3a2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>2fd02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>submitted_by</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>67a2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>afd02fdcdbe313005b1f9b81ca961928</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dxc_web_link</element>
-            <position>10</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>e7a2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>23d02fdcdbe313005b1f9b81ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>exchange_rate</element>
-            <position>11</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>6ba2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>a3d02fdcdbe313005b1f9b81ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>local_currency</element>
-            <position>12</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>eba2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>27d02fdcdbe313005b1f9b81ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>gbp</element>
-            <position>13</position>
+            <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>6fa2c0d5db5b53005b1f9b81ca9619ab</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>a7d02fdcdbe313005b1f9b81ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>next_approver</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>efa2c0d5db5b53005b1f9b81ca9619ab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>15</position>
+            <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-13 09:13:10</sys_created_on>
-            <sys_id>63a2c0d5db5b53005b1f9b81ca9619ac</sys_id>
+            <sys_created_on>2018-07-23 09:05:42</sys_created_on>
+            <sys_id>2bd02fdcdbe313005b1f9b81ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_245925_dxc_docs_approval_request" sys_domain="global" view="b6720c95db5b53005b1f9b81ca9619a4">367240d5db5b53005b1f9b81ca9619f5</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-13 09:13:10</sys_updated_on>
+            <sys_updated_on>2018-07-23 09:05:42</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
