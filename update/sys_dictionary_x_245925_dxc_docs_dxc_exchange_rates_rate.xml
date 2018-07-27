@@ -54,15 +54,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-13 08:21:42</sys_created_on>
-        <sys_id>5aa6ff4ddb1b53005b1f9b81ca9619fe</sys_id>
+        <sys_id>7707fa2ddb231300e07485184b961900</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Rate</sys_name>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_dictionary_x_245925_dxc_docs_dxc_exchange_rates_rate</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 08:21:42</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-07-27 03:15:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

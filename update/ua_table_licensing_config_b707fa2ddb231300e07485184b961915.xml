@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_245925_dxc_docs_sub_category</name>
+        <name>x_245925_dxc_docs_dxc_exchange_rates</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-07-13 07:40:47</sys_created_on>
-        <sys_id>0a8deb49db1b53005b1f9b81ca9619d2</sys_id>
+        <sys_created_on>2018-07-13 08:19:04</sys_created_on>
+        <sys_id>b707fa2ddb231300e07485184b961915</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_245925_dxc_docs_sub_category</sys_name>
+        <sys_name>x_245925_dxc_docs_dxc_exchange_rates</sys_name>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
-        <sys_update_name>ua_table_licensing_config_0a8deb49db1b53005b1f9b81ca9619d2</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_b707fa2ddb231300e07485184b961915</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-13 07:40:47</sys_updated_on>
+        <sys_updated_on>2018-07-13 08:19:04</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

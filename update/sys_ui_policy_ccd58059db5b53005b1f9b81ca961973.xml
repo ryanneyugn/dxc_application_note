@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_245925_dxc_docs_approval_request">sub_category=33a5cc19db5b53005b1f9b81ca96191f^EQ<item display_table="x_245925_dxc_docs_sub_category" display_value="Other" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="false" value="33a5cc19db5b53005b1f9b81ca96191f"/>
+        <conditions table="x_245925_dxc_docs_approval_request">sub_category=33a5cc19db5b53005b1f9b81ca96191f^EQ<item endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="false" value="33a5cc19db5b53005b1f9b81ca96191f"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
