@@ -13,12 +13,12 @@
         <on_load>true</on_load>
         <order>100</order>
         <reverse_if_false>true</reverse_if_false>
-        <run_scripts>true</run_scripts>
+        <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	g_form.setValue('next_approver', 'DXC PM');
+	
 }]]></script_true>
         <set_values/>
         <short_description>Show 'leader agree' field if 'level of approval' is PM.</short_description>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01926d47db1313005b1f9b81ca9619fc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Show 'leader agree' field if 'level of approval' is PM.</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_policy_01926d47db1313005b1f9b81ca9619fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-20 04:23:07</sys_updated_on>
+        <sys_updated_on>2018-07-31 03:45:29</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui_type>0</ui_type>
         <view/>

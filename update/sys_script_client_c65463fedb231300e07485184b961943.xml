@@ -4,39 +4,39 @@
         <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
-        <description/>
-        <field>leader_agree</field>
+        <description>Auto populate data of next approver field.</description>
+        <field>level_of_approval</field>
         <global>true</global>
         <messages/>
-        <name>DXC_CreateNewRequest_OnChange_LeaderAgre</name>
+        <name>DXC_CreateNewRequest_OnChange_LOApproval</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-	if (isLoading || newValue === '') {
-		return;
-	}
-		
-	if(g_form.getValue('leader_agree') == 'true'){
-		g_form.setValue('next_approver', 'DXC PM');
-	} else {
-		g_form.setValue('next_approver', 'DXC Leader');
+   if (isLoading || newValue === '') {
+      return;
+   }
+   
+	if(g_form.getValue('level_of_approval') == 'Leader'){
+		g_form.setValue('next_approver', 'Leader');
+	} else if(g_form.getValue('level_of_approval') == 'Leader'){
+		g_form.setValue('next_approver', 'LeaderPM');
 	}
 	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-07-19 02:49:46</sys_created_on>
+        <sys_created_on>2018-07-31 03:49:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5c33e187db1313005b1f9b81ca9619c1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>DXC_CreateNewRequest_OnChange_LeaderAgre</sys_name>
+        <sys_id>c65463fedb231300e07485184b961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DXC_CreateNewRequest_OnChange_LOApproval</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
-        <sys_update_name>sys_script_client_5c33e187db1313005b1f9b81ca9619c1</sys_update_name>
+        <sys_update_name>sys_script_client_c65463fedb231300e07485184b961943</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-31 03:44:01</sys_updated_on>
+        <sys_updated_on>2018-07-31 03:49:39</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
