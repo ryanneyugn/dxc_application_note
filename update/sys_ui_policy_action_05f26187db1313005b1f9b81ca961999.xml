@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-07-19 02:43:45</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
-        <ui_policy display_value="[Leader agree: show] [Level of approval: PM]">01926d47db1313005b1f9b81ca9619fc</ui_policy>
+        <ui_policy display_value="Show 'leader agree' field if 'level of approval' is PM.">01926d47db1313005b1f9b81ca9619fc</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

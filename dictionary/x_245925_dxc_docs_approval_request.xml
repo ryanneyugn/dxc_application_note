@@ -2,12 +2,12 @@
 <database>
     <element label="Approval Request" max_length="40" name="x_245925_dxc_docs_approval_request" type="collection">
         <element default="False" label="Approved with condition" max_length="40" name="approved_with_condition" type="boolean"/>
-        <element label="Comments" max_length="4000" name="comments" read_only="true" type="journal"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
         <element label="Conditions" max_length="4000" name="conditions" type="journal"/>
         <element label="DXC Title" mandatory="true" max_length="300" name="dxc_title" type="string"/>
         <element label="DXC Web Link" mandatory="true" max_length="300" name="dxc_web_link" type="url"/>
         <element label="Exchange rate" mandatory="true" max_length="40" name="exchange_rate" type="float"/>
-        <element label="GBP" mandatory="true" max_length="20" name="gbp" read_only="true" type="string"/>
+        <element attributes="scale=20" label="GBP" mandatory="true" max_length="20" name="gbp" type="decimal"/>
         <element label="LBU" mandatory="true" max_length="32" name="lbu" read_only="true" reference="x_245925_dxc_docs_local_business_units" type="reference"/>
         <element label="Leader agree" mandatory="true" max_length="40" name="leader_agree" type="boolean"/>
         <element choice="1" label="Level of approval" mandatory="true" max_length="40" name="level_of_approval" type="choice">
@@ -22,7 +22,16 @@
         <element label="Please specify" mandatory="true" max_length="100" name="please_specify" type="string"/>
         <element label="Reviewing" max_length="40" name="reviewing" read_only="true" type="boolean"/>
         <element choice="3" default="New" label="State" mandatory="true" max_length="40" name="state" read_only="true" type="choice">
-            <choice/>
+            <choice>
+                <element label="Approved" value="Approved"/>
+                <element label="Approved With Condition" value="ApprovedWCondition"/>
+                <element label="Cancelled" value="Cancelled"/>
+                <element label="Declined" value="Declined"/>
+                <element label="Draft" value="Draft"/>
+                <element label="New" value="New"/>
+                <element label="Waiting for Leader" value="WaitingLeader"/>
+                <element label="Waiting for PM" value="WaitingPMApprover"/>
+            </choice>
         </element>
         <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Submission Date" max_length="40" name="submission_date" type="glide_date_time" use_dynamic_default="true"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="32" name="submitted_by" reference="sys_user" type="reference" use_dynamic_default="true"/>

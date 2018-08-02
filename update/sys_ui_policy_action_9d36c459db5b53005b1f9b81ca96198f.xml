@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-07-13 09:30:26</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
-        <ui_policy display_value="[Please specify: show] [Sub category: Other]">ccd58059db5b53005b1f9b81ca961973</ui_policy>
+        <ui_policy display_value="Show &quot;Please specify&quot; field when &quot;Sub category&quot; field is &quot;Other&quot;.">ccd58059db5b53005b1f9b81ca961973</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

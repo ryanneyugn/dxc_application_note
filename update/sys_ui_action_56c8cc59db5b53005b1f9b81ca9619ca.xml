@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>sysverb_update_and_stay</action_name>
+        <action_name>save</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments/>
         <condition>(current.canWrite() || current.canCreate()) &amp;&amp; (current.state == 'New' || current.state == 'Draft') &amp;&amp; gs.hasRole("x_245925_dxc_docs.DXC Employee")</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
-        <form_context_menu>true</form_context_menu>
+        <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_style/>
         <hint/>
@@ -23,22 +23,28 @@
         <name>Save</name>
         <onclick>onClickSave()</onclick>
         <order>300</order>
-        <script><![CDATA[try{
-	action.setRedirectURL(current);
-
-	if(current.state == 'Draft'){
-		current.update();
-		gs.addInfoMessage('Request save successful!');
-	} else if(current.state == 'New'){
-		current.state = 'Draft';
-		current.insert();
-		gs.addInfoMessage('Request insert successful!');
-	}
-			
-} catch (err){
-	gs.addErrorMessage('Uncaught error occured:' + err);
+        <script><![CDATA[function onClickSave(){
+	gsftSubmit(null, g_form.getFormElement(), 'save');
 }
-]]></script>
+
+if(typeof window == 'undefined'){
+	run();
+}
+
+function run(){
+	try{
+		if(current.state == 'Draft'){
+			current.update();
+		} else if(current.state == 'New'){
+			current.state = 'Draft';
+			current.insert();
+		}
+				
+		gs.addInfoMessage('Request save successful!');
+	} catch (err){
+		gs.addErrorMessage('Uncaught error occured:' + err);
+	}
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -49,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>56c8cc59db5b53005b1f9b81ca9619ca</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Save</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -57,7 +63,7 @@
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_action_56c8cc59db5b53005b1f9b81ca9619ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-02 09:34:18</sys_updated_on>
+        <sys_updated_on>2018-07-30 08:24:25</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

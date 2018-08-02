@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="DXC Approval Note">eb827f0ddb1b53005b1f9b81ca961966</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_245925_dxc_docs_approval_request">submitted_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="submitted_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>List of My Request</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_245925_dxc_docs_approval_request</name>
+        <order>250</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_245925_dxc_docs.DXC Employee</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-13 08:08:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6b3ffc9db1b53005b1f9b81ca961956</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>My DXC Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
+        <sys_update_name>sys_app_module_f6b3ffc9db1b53005b1f9b81ca961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-20 08:15:28</sys_updated_on>
+        <timeline_page/>
+        <title>My DXC Requests</title>
+        <uncancelable>false</uncancelable>
+        <view_name>dxcview</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>
