@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <conditions/>
         <description/>
         <global>true</global>
@@ -16,27 +16,27 @@
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	if(g_user.userID != g_form.getValue('submitted_by')){
+	if (g_user.userID != g_form.getValue('submitted_by')) {
 		g_form.setReadOnly('comments', true);
 	}
 }]]></script_true>
         <set_values/>
-        <short_description>User is not able to add comment if it's not in his/her queue.</short_description>
+        <short_description>[Comments: readonly] [!CurrentUserQueue]</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-19 02:12:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>861b1d43db1313005b1f9b81ca9619c4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>User is not able to add comment if it's not in his/her queue.</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>[Comments: readonly] [!CurrentUserQueue]</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
         <sys_policy/>
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_policy_861b1d43db1313005b1f9b81ca9619c4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-19 02:30:40</sys_updated_on>
+        <sys_updated_on>2018-08-03 07:24:07</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui_type>0</ui_type>
         <view/>

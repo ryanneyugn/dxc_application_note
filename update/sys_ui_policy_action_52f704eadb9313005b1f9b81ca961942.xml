@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-07-17 06:49:05</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
-        <ui_policy display_value="Show &quot;Approval with condition&quot; field if request is submitted.">79578caadb9313005b1f9b81ca9619b1</ui_policy>
+        <ui_policy display_value="[Approval with condition: show] [Request is submitted]">79578caadb9313005b1f9b81ca9619b1</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>
