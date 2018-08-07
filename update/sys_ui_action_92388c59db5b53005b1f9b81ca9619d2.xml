@@ -3,7 +3,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>start_reviewing</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <comments/>
         <condition>current.canWrite() &amp;&amp; gs.hasRole("x_245925_dxc_docs.DXC Leader") &amp;&amp; current.state == 'WaitingLeader' &amp;&amp; !current.reviewing</condition>
         <form_action>true</form_action>
@@ -23,24 +23,15 @@
         <name>Start Reviewing</name>
         <onclick>onClickStart_Reviewing()</onclick>
         <order>150</order>
-        <script><![CDATA[function onClickStart_Reviewing(){
-	gsftSubmit(null, g_form.getFormElement(), 'start_reviewing');
+        <script><![CDATA[try{
+	current.reviewing = true;
+	current.update();
+	gs.addInfoMessage('Request reviewing started!');
+} catch (err){
+	gs.addErrorMessage('Uncaught error occured:' + err);
 }
-
-if(typeof window == 'undefined'){
-	run();
-}
-
-function run(){		
-	try{
-		current.reviewing = true;
-		current.update();
-		gs.addInfoMessage('Request reviewing started!');
-	} catch (err){
-		gs.addErrorMessage('Uncaught error occured:' + err);
-	}	
-}]]></script>
-        <show_insert>true</show_insert>
+]]></script>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -50,7 +41,7 @@ function run(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>92388c59db5b53005b1f9b81ca9619d2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Start Reviewing</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -58,7 +49,7 @@ function run(){
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_action_92388c59db5b53005b1f9b81ca9619d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-30 08:38:10</sys_updated_on>
+        <sys_updated_on>2018-08-06 07:23:46</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

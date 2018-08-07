@@ -16,7 +16,7 @@
                 <element label="Leader &amp; PM" value="LeaderPM"/>
             </choice>
         </element>
-        <element label="Local Currency" mandatory="true" max_length="32" name="local_currency" reference="fx_currency" type="reference" use_dependent_field="true"/>
+        <element label="Local Currency" mandatory="true" max_length="32" name="local_currency" read_only="true" reference="fx_currency" type="reference" use_dependent_field="true"/>
         <element label="Next approver" mandatory="true" max_length="100" name="next_approver" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Please specify" mandatory="true" max_length="100" name="please_specify" type="string"/>
@@ -34,7 +34,7 @@
             </choice>
         </element>
         <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Submission Date" max_length="40" name="submission_date" type="glide_date_time" use_dynamic_default="true"/>
-        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="32" name="submitted_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitted By" max_length="32" name="submitted_by" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Sub Category" mandatory="true" max_length="32" name="sub_category" reference="x_245925_dxc_docs_sub_category" type="reference"/>
         <index name="index">
             <element name="sub_category"/>

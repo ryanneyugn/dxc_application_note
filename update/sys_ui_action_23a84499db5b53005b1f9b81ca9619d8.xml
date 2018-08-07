@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>approve_leader</action_name>
+        <action_name>approve</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <comments/>
-        <condition>gs.hasRole("x_245925_dxc_docs.DXC Leader") &amp;&amp; current.state == 'WaitingLeader'</condition>
+        <condition>(gs.hasRole("x_245925_dxc_docs.DXC Leader") &amp;&amp; current.state == 'WaitingLeader') || (gs.hasRole("x_245925_dxc_docs.DXC PM") &amp;&amp; current.state == 'WaitingPMApprover')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -23,29 +23,28 @@
         <name>Approve</name>
         <onclick>onClickApprove()</onclick>
         <order>200</order>
-        <script><![CDATA[function onClickApprove(){
-	gsftSubmit(null, g_form.getFormElement(), 'approve_leader');
-}
-
-if(typeof window == 'undefined'){
-	run();
-}
-
-function run(){
-	try{
-		if(current.level_of_approval == 'Leader'){
+        <script><![CDATA[try{
+	
+	if (current.state == 'WaitingLeader') {
+		if (current.level_of_approval == 'Leader') {
+			current.next_approver = 'Completed';
 			current.state = 'Approved';
-		} else if (current.level_of_approval == 'LeaderPM'){
+		} else if (current.level_of_approval == 'LeaderPM') {
+			current.next_approver = 'DXC PM';
 			current.state = 'WaitingPMApprover';
 		}
-		
-		current.update();
-		gs.addInfoMessage('Request approve success.');
-	} catch(err){
-		gs.addErrorMessage('Uncaught error occured: ' + err);
+	} else if (current.state == 'WaitingPMApprover') {
+		current.next_approver = 'Completed';
+		current.state = 'Approved';
 	}
-}]]></script>
-        <show_insert>true</show_insert>
+	
+	current.update();
+	gs.addInfoMessage('Request approve success.');
+} catch (err) {
+	gs.addErrorMessage('Uncaught error occured: ' + err);
+}
+]]></script>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -55,7 +54,7 @@ function run(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23a84499db5b53005b1f9b81ca9619d8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -63,7 +62,7 @@ function run(){
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_ui_action_23a84499db5b53005b1f9b81ca9619d8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-30 09:01:43</sys_updated_on>
+        <sys_updated_on>2018-08-06 07:20:34</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
