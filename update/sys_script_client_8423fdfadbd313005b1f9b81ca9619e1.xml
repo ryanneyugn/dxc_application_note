@@ -17,13 +17,6 @@
 	ga.addParam('sysparm_name', 'getRate');
 	ga.addParam('sysparm_local_currency', g_form.getDisplayBox('local_currency').value);
 	ga.getXML(responseHandler);
-	
-	// Attachment manipulate
-// 	if (g_user.hasRole('x_245925_dxc_docs.DXC Employee') && (g_form.getValue('state') == 'Declined' || g_form.getValue('state') == 'Cancelled')) {
-// 		g_form.disableAttachments();
-// 	} else {
-// 		g_form.enableAttachments();
-// 	}
 }
 
 function responseHandler(response){
@@ -37,7 +30,7 @@ function responseHandler(response){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8423fdfadbd313005b1f9b81ca9619e1</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>DXC_ApprovalRequest_OL</sys_name>
         <sys_overrides/>
         <sys_package display_value="DXC Approval Note" source="x_245925_dxc_docs">90c42741db1b53005b1f9b81ca9619f9</sys_package>
@@ -45,7 +38,7 @@ function responseHandler(response){
         <sys_scope display_value="DXC Approval Note">90c42741db1b53005b1f9b81ca9619f9</sys_scope>
         <sys_update_name>sys_script_client_8423fdfadbd313005b1f9b81ca9619e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 03:43:43</sys_updated_on>
+        <sys_updated_on>2018-08-08 07:32:32</sys_updated_on>
         <table>x_245925_dxc_docs_approval_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
